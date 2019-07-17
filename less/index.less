@@ -57,3 +57,142 @@ html, body {
     height: 100%;
 }
 
+// Start Container
+
+@media(max-width: 500px) {
+	.container {
+	  width: 500px;
+	  background: gray;
+	}
+  
+
+
+	.bordered{
+		border: 4px solid black;
+	}
+
+
+// END CONTAINER
+
+// Begin Font Size
+
+html {font-size: 62.5%;
+}
+
+
+// Start FONT SIZES
+
+h1{ 
+	font-size: 4rem;
+	padding: 5px;
+	
+}
+
+h2{
+	font-size: 2.5rem;
+	padding: 5px;
+	
+}
+
+h3{
+	font-size: 2.2rem;
+	padding: 5px;
+}
+p, ul, a{ 
+	font-size: 1.8rem;
+	padding: 5px;
+	list-style: circle;
+}
+
+// End Font Size
+
+// Start Top Section
+.TopSection{
+	background: lightgray;
+	
+	margin: 2% 5%;
+	
+img{
+	width: 40%;
+	padding: 2%;
+}	
+
+	}
+
+
+	header{
+		nav{
+		@media(max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			padding: 15px;
+		
+		}
+
+		nav{
+			display: flex;
+			justify-content: space-evenly;
+			padding: 15px;
+			.bordered();
+			
+			a{
+				text-decoration: none;
+				
+			}
+		}
+		
+	}
+// Start mid Section
+
+.MidSection{
+	display: flex;
+	justify-content: space-evenly;
+	.Box1, .Box2{
+		width: 50%;
+		background: lightblue;
+		margin: 1% 5%;
+	}
+	
+
+}//end MidSection
+
+.BotSection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1% 5%;
+
+
+	.title{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	.Box4{
+		display: flex;
+		justify-content: space-evenly;
+		align-content: center;
+	}
+	.Box4b{
+		display: flex;
+		justify-content: space-evenly;
+		align-content: center;
+		background: lightgray;
+	}
+	
+	
+}
+
+
+footer{
+	display: flex;
+	justify-content: center;
+	background: gray;
+	padding: 25px;
+	margin: 5%;
+	
+	p{
+		color: white;
+		
+	}
+}
