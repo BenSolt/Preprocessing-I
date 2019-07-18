@@ -57,3 +57,193 @@ html, body {
     height: 100%;
 }
 
+// Start Container
+
+.container {
+	  width: 100%;
+	  font-family: @fontName;
+	}
+  
+
+
+	.border1{
+		border: 2px solid black;
+	}
+
+	.border2{
+		border: 2px solid black;
+	}
+
+
+
+// END CONTAINER
+
+// Begin Font Size
+
+html {font-size: 62.5%;
+}
+
+
+// Start FONT SIZES
+
+h1{ 
+	font-size: 4rem;
+	padding: 5px;
+	
+}
+
+h2{
+	font-size: 2.5rem;
+	padding: 5px;
+	
+}
+
+h3{
+	font-size: 2.2rem;
+	padding: 5px;
+}
+p, ul, a{ 
+	font-size: 1.8rem;
+	padding: 5px;
+	list-style: circle;
+}
+
+// End Font Size
+
+// Start Top Section
+
+.TopSection{
+	background: @colortop;
+	margin: 2% 5%;
+	
+img{
+	width: 40%;
+	padding: 2%;
+}	
+
+}
+
+// Variables
+
+@colortop: lightgray;
+@colormid:lightblue;
+@colorfooter: gray;
+@colorCopRightW: white;
+@colorCopRightB: black;
+@fontName: 'Roboto', sans-serif;
+
+	header{
+		@media screen and (max-width: 500px) {
+
+			nav{display: flex;
+				flex-direction: column;	
+				a{
+					display: flex;
+					justify-content: center;
+			.border1();
+				}
+			}
+		}
+		nav{
+			display: flex;
+			justify-content: space-evenly;
+			padding: 15px;
+		
+			a{
+				 text-decoration: none;
+	
+			}
+		}
+		
+	}
+
+
+// Start mid Section
+
+ .MidSection{
+@media screen and(max-width: 500px){
+
+	.Box1 {
+		width: 50%;
+ 		background: none;
+ 		margin: 1% 5%;
+	
+	}
+}
+
+		display: flex;
+	justify-content: space-evenly;	
+	
+	.Box1 {
+		width: 50%;
+ 		background: @colormid;
+ 		margin: 1% 5%;
+		
+	
+	}
+
+
+	.Box2 {
+ 		width: 50%;
+ 		background: @colormid;
+ 		margin: 1% 5%;
+		
+ 	} // End Box
+}	//End Mid Section
+
+
+.BotSection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1% 5%;
+
+
+	.title{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	.Box4{
+		display: flex;
+		justify-content: space-evenly;
+		align-content: center;
+	}
+	.Box4b{
+		display: flex;
+		justify-content: space-evenly;
+		align-content: center;
+		background: @colortop;
+	}
+	
+	
+}
+
+
+footer{
+	@media screen and(max-width: 500px){
+		display: flex;
+	justify-content: center;	
+	padding: 25px;
+	margin: 5%;
+	border: none;
+	
+	p{
+		color: @colorCopRightW;
+		
+	}
+
+	}
+		
+	
+	display: flex;
+	justify-content: center;
+	background: @colorfooter;
+	padding: 25px;
+	margin: 5%;
+	.border2();
+	p{
+		color: @colorCopRightW;
+		
+	}
+}
